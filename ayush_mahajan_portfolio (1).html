@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayush Mahajan | Marketing & Lead Generation Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #020617;
+      --card: rgba(255,255,255,0.05);
+      --accent: #3b82f6;
+      --accent2: #8b5cf6;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --glass: blur(12px);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: radial-gradient(circle at 20% 20%, #0f172a, #020617);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* Floating background glow */
+    body::before {
+      content: "";
+      position: fixed;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, var(--accent), transparent 70%);
+      top: -100px;
+      left: -100px;
+      filter: blur(80px);
+      opacity: 0.4;
+      z-index: -1;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, var(--accent2), transparent 70%);
+      bottom: -100px;
+      right: -100px;
+      filter: blur(80px);
+      opacity: 0.4;
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    .profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid var(--accent);
+      box-shadow: 0 0 25px var(--accent);
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 42px;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .typing {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 18px;
+      height: 24px;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      backdrop-filter: var(--glass);
+      background: rgba(2,6,23,0.7);
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: var(--accent);
+      font-size: 28px;
+    }
+
+    .card {
+      background: var(--card);
+      backdrop-filter: var(--glass);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 20px rgba(59,130,246,0.2);
+    }
+
+    .skills span {
+      display: inline-block;
+      padding: 8px 14px;
+      margin: 6px;
+      border-radius: 20px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      font-size: 14px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .stat {
+      text-align: center;
+      padding: 20px;
+      border-radius: 15px;
+      background: var(--card);
+    }
+
+    .stat h3 {
+      font-size: 28px;
+      color: var(--accent);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      margin-top: 15px;
+      border-radius: 8px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+
+  
+
+  <h1>Ayush Mahajan</h1>
+
+  <div class="typing" id="typing"></div>
+
+  <a href="#contact" class="btn">Contact Me</a>
+
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#stats">Achievements</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    Results oriented marketing and lead generation specialist experienced in B2B outreach CRM tools and campaign strategy. Led teams managed partnerships and executed conversion focused marketing campaigns across university and corporate ecosystems.
+  </div>
+</section>
+
+<section id="stats">
+  <h2>Key Achievements</h2>
+  <div class="stats">
+
+    <div class="stat">
+      <h3>₹1.5L+</h3>
+      Partnerships secured
+    </div>
+
+    <div class="stat">
+      <h3>22</h3>
+      Team members managed
+    </div>
+
+    <div class="stat">
+      <h3>25,000+</h3>
+      Leads generated
+    </div>
+
+    <div class="stat">
+      <h3>Latest</h3>
+      Pearl Lemon Group Intern
+    </div>
+
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Lead Generation Intern</h3>
+    <p>Pearl Lemon Group | Latest Internship</p>
+    <p>Working on global lead generation campaigns using CRM tools, LinkedIn outreach, cold email systems, and automation workflows. Supporting international client acquisition and conversion optimization.</p>
+  </div>
+
+  <div class="card">
+    <h3>Marketing Intern</h3>
+    <p>1.5 Degree | Marketing Internship</p>
+    <p>Executing structured outreach campaigns, managing marketing funnels, and generating leads through LinkedIn, email marketing, and campaign targeting strategies.</p>
+  </div>
+
+  <div class="card">
+    <h3>Senior Manager Marketing</h3>
+    <p>AIESEC in Delhi IIT | Aug 2025 – Jan 2026</p>
+    <p>Led marketing strategies, executed high scale lead generation campaigns, and collaborated with universities and partners to increase program outreach and conversions.</p>
+  </div>
+
+  <div class="card">
+    <h3>Senior Manager Outgoing Global Exchange</h3>
+    <p>AIESEC in Delhi IIT | Jan 2025 – Jul 2025</p>
+    <p>Managed a team of 22 members, built performance tracking dashboards, and ensured consistent lead generation and conversion tracking across multiple verticals.</p>
+  </div>
+
+  <div class="card">
+    <h3>Organizing Committee President – Voice Up</h3>
+    <p>AIESEC in Delhi IIT | Oct 2025</p>
+    <p>Planned and executed youth marketing campaigns, generated leads, managed outreach, and handled full campaign execution and communication.</p>
+  </div>
+
+  <div class="card">
+    <h3>Organizing Committee Vice President – External Relations & Finance</h3>
+    <p>Global Village 2025 | Jul 2025 – Aug 2025</p>
+    <p>Generated leads, managed sponsorship outreach, coordinated partners, and maintained financial planning and reporting.</p>
+  </div>
+
+  <div class="card">
+    <h3>Vice President Partnerships</h3>
+    <p>Climate Ideation Case Competition | Nov 2024</p>
+    <p>Generated corporate leads, secured ₹1.5 lakh in partnerships, and managed sponsor communication and long term collaborations.</p>
+  </div>
+
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card skills">
+
+    <span>Lead Generation</span>
+    <span>CRM Management</span>
+    <span>LinkedIn Sales Navigator</span>
+    <span>Email Marketing</span>
+    <span>B2B Marketing</span>
+    <span>Campaign Strategy</span>
+    <span>Conversion Tracking</span>
+    <span>Community Marketing</span>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+
+    Email: mahajanayush2858@gmail.com
+    <br><br>
+
+    Phone: +91 9716904921
+    <br><br>
+
+    LinkedIn:
+    <br>
+
+    linkedin.com/in/ayush-mahajan-417090320
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Ayush Mahajan Portfolio
+</footer>
+
+<script>
+
+const roles = [
+  "Marketing Strategist",
+  "Lead Generation Specialist",
+  "B2B Outreach Expert",
+  "AIESEC Marketing Leader"
+];
+
+let i = 0;
+let j = 0;
+let current = "";
+let isDeleting = false;
+
+function type() {
+
+  if (i < roles.length) {
+
+    if (!isDeleting && j <= roles[i].length) {
+
+      current = roles[i].substring(0, j++);
+
+    }
+
+    else if (isDeleting && j >= 0) {
+
+      current = roles[i].substring(0, j--);
+
+    }
+
+    if (j == roles[i].length) {
+
+      isDeleting = true;
+
+      setTimeout(type, 1000);
+
+      return;
+
+    }
+
+    else if (j == 0 && isDeleting) {
+
+      isDeleting = false;
+
+      i++;
+
+      if (i == roles.length) i = 0;
+
+    }
+
+  }
+
+  document.getElementById("typing").innerHTML = current;
+
+  setTimeout(type, isDeleting ? 50 : 100);
+
+}
+
+type();
+
+</script>
+
+</body>
+</html>
